@@ -3,7 +3,7 @@ Content-type: application/json
 
 {
     "title": "PEDRO",
-    "description": "lula",
+    "description": "marta",
     "duration": 100
 }
 
@@ -11,3 +11,13 @@ Content-type: application/json
 
 GET http://localhost:3333/videos
 
+###
+
+PUT http://localhost:3333/videos/
+Content-type: application/json
+
+{
+    "title": "Thiago Mula",
+    "description": "marta",
+    "duration": 80
+}
