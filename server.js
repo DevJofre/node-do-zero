@@ -37,8 +37,12 @@ server.put("/videos/:id", (request, reply) => {
   return reply.status(204).send();
 });
 
-server.delete("/video/:id", () => {
-  return "hello world";
+server.delete("/videos/:id", (request, reply) => {
+  const videosId = request.params.id;
+
+  database.delete(videosId);
+
+  return reply.status(204).send();
 });
 
 server.listen({

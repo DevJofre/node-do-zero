@@ -21,3 +21,7 @@ Content-type: application/json
     "description": "marta",
     "duration": 80
 }
+
+###
+
+DELETE  http://localhost:3333/videos/86010de1-6fe7-4c78-8bbe-8a0c6df121ba
