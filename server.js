@@ -5,8 +5,12 @@ const server = fastify();
 
 const database = new DatabaseMemory();
 
-server.get("/videos", () => {
-  const videos = database.list();
+server.get("/videos", (request, reply) => {
+  const search = request.query.search;
+
+  console.log(search);
+
+  const videos = database.list(search);
 
   return videos;
 });
