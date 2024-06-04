@@ -2,14 +2,16 @@ POST http://localhost:3333/videos
 Content-type: application/json
 
 {
-    "title": "marte",
-    "description": "marta",
+    "title": "Video node",
+    "description": "essa e a primeira historia nao contada",
     "duration": 100
 }
 
 ###
 
-GET http://localhost:3333/videos?search=lux
+GET http://localhost:3333/videos?search=node
+
+
 
 ###
 
